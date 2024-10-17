@@ -1,132 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFÓLIO - DOUGLAS REIS</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a escala para dispositivos móveis -->
+    <title>Página com Imagem</title> <!-- Título da página que aparece na aba do navegador -->
+    <style>
+        /* Estilos CSS para centralizar a imagem */
+        body {
+            display: flex; /* Usa Flexbox para o layout */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Altura da página é 100% da altura da janela */
+            margin: 0; /* Remove margens padrão do body */
+            background-color: #f0f0f0; /* Cor de fundo da página */
+        }
+        img {
+            max-width: 100%; /* A imagem não ultrapassa a largura da tela */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <img src="profile.png" alt="Foto de perfil de Douglas Reis" class="profile-img">
-            <div class="profile-info">
-                <h1>Douglas Reis</h1>
-                <p>Estudante de Engenharia da Computação</p>
-            </div>
-        </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#sobre">SOBRE</a></li>
-            <li><a href="#habilidades">HABILIDADES</a></li>
-            <li><a href="#projetos">PROJETOS</a></li>
-            <li><a href="#contato">CONTATO</a></li>
-        </ul>
-    </nav>
-    <p><br><br></p>
-    <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="image1.jpg" style="width:100%">
-      <div class="text">EXCEL</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="image2.jpg" style="width:100%">
-      <div class="text">POWERBI</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="image3.png" style="width:100%">
-      <div class="text">PYTHON</div>
-    </div>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-    </div>
-  
-    <main>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>Sou um estudante de Engenharia da Computação no 9º ano da graduação, com 1 ano de experiência em análise de dados como Jovem Aprendiz na área de TI. Apaixonado por tecnologia desde cedo, descobri minha afinidade pela programação enquanto explorava linguagens como Python e desenvolvia soluções para análise de dados utilizando Excel e PowerBi. Minha curiosidade pela Astronomia começou na infância e se tornou uma paixão que me inspira a entender melhor o cosmos e suas maravilhas.</p>
-          <p>A combinação entre tecnologia e Astronomia me motiva a buscar novos desafios acadêmicos e profissionais. Durante minha jornada acadêmica, tenho buscado participar ativamente de projetos que envolvem desde o desenvolvimento de algoritmos até a implementação de soluções práticas em sistemas computacionais. Meu objetivo é contribuir para a evolução tecnológica e científica, aplicando meus conhecimentos em engenharia de software e análise de dados para resolver problemas complexos.</p>
-          <p>Além disso, mantenho-me atualizado com as últimas tendências em tecnologia e ciência, participando de cursos e eventos que ampliam meu horizonte profissional. Acredito na importância da colaboração e do aprendizado contínuo para alcançar novos patamares na minha carreira. Estou entusiasmado para explorar novas oportunidades e contribuir de forma significativa para projetos que desafiem e inspirem.</p>
-        </section>
-
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Excel</li>
-                <li>PowerBi</li>
-                <li>Python
-                <ul>
-                  <li>Análise de Dados</li>
-                  <li>Automação</li>
-                </ul></li>
-            </ul>
-        </section>
-
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <div class="projeto">
-                <div class="projeto-info">
-                    <h3>Análise de Dados com Excel</h3>
-                    <p>Projeto para explorar a capacidade do Microsoft Excel na análise de grandes conjuntos de dados para identificar padrões e tendências significativas. Utilizando técnicas avançadas de formatação condicional, gráficos dinâmicos e tabelas cruzadas, o objetivo é extrair insights valiosos que orientem decisões estratégicas.</p>
-                </div>
-                <img src="projeto1.jpeg" alt="Análise de Dados com Excel" class="projeto-img">
-            </div>
-            <div class="projeto">
-                <div class="projeto-info">
-                    <h3>Dashboard de Dados Empresariais com PowerBi</h3>
-                    <p>Criação de um dashboard interativo e visualmente atraente utilizando o Microsoft PowerBi para consolidar dados empresariais diversos. Através da integração de múltiplas fontes de dados, como vendas, marketing e operações, o dashboard oferece uma visão holística do desempenho da empresa.</p>
-                </div>
-                <img src="projeto2.jpeg" alt="Dashboard de Dados Empresariais com PowerBi" class="projeto-img">
-            </div>
-            <div class="projeto">
-                <div class="projeto-info">
-                    <h3>Automação de Planilhas com Python</h3>
-                    <p>Automação de processos repetitivos e aumento da eficiência utilizando scripts em Python para manipulação de dados em planilhas. Através da integração de bibliotecas poderosas como Pandas e Openpyxl, o objetivo é automatizar tarefas como importação de dados, formatação automática, cálculos complexos e geração de relatórios personalizados.</p>
-                </div>
-                <img src="projeto3.jpeg" alt="Automação de Planilhas com Python" class="projeto-img">
-            </div>
-        </section>
-
-        <section id="contato">
-            <h2>Contato</h2>
-            <form id="contactForm">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Douglas Reis. Todos os direitos reservados.</p>
-        <p>
-            <a href="https://www.linkedin.com/in/doug-reis" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/DouglazReis" target="_blank">GitHub</a> |
-            <a href="mailto:douglaszreisz@gmail.com">Email</a>
-        </p>
-    </footer>
-
-    <script src="scripts.js"></script>
+    <img src="profile.png" alt="Descrição da Imagem"> <!-- Substitua pelo caminho da sua imagem -->
 </body>
 </html>
