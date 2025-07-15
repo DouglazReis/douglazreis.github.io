@@ -5,6 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>QUEM LER É GAY -_-</title>
   <link rel="stylesheet" href="styles.css"/>
+  <style>
+    .tabela-section {
+      background-image: url('bg.png');
+      background-size: cover;
+      background-position: center;
+      padding: 40px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .tabela-namoro {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .tabela-namoro th, .tabela-namoro td {
+      border: 1px solid #fff;
+      padding: 15px;
+    }
+
+    .tabela-namoro th {
+      font-size: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .tabela-namoro ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tabela-namoro li {
+      margin: 8px 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -26,33 +63,35 @@
       </div>
     </section>
 
-    <!-- Seção com background via HTML -->
-    <table background="bg.png" width="100%" cellpadding="40" style="color: white; text-align: center;">
-      <tr>
-        <th style="font-size: 24px;">MOTIVOS PARA NAMORAR COMIGO</th>
-        <th style="font-size: 24px;">MOTIVOS PARA NÃO NAMORAR COMIGO</th>
-      </tr>
-      <tr>
-        <td>
-          <ul style="list-style: none; padding: 0;">
-            <li>Sou engraçado (às vezes sem querer)</li>
-            <li>Faço memes e sites doidos como esse</li>
-            <li>Levo a sério quem gosto</li>
-            <li>Gosto de pizza (isso conta muito)</li>
-            <li>Sou fiel tipo cachorro, mas sem latir</li>
-            <li>Sei programar (posso hackear seu coração)</li>
-            <li>Não sou possessivo, mas gosto de carinho</li>
-            <li>Não ronco (acho)</li>
-            <li>Você vai rir comigo até em momentos bobos</li>
-          </ul>
-        </td>
-        <td>
-          <ul style="list-style: none; padding: 0;">
-            <li>NENHUM</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
+    <!-- Nova seção adicionada -->
+    <section class="tabela-section">
+      <table class="tabela-namoro">
+        <tr>
+          <th>MOTIVOS PARA NAMORAR COMIGO</th>
+          <th>MOTIVOS PARA NÃO NAMORAR COMIGO</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Sou engraçado (às vezes sem querer)</li>
+              <li>Faço memes e sites doidos como esse</li>
+              <li>Levo a sério quem gosto</li>
+              <li>Gosto de pizza (isso conta muito)</li>
+              <li>Sou fiel tipo cachorro, mas sem latir</li>
+              <li>Sei programar (posso hackear seu coração)</li>
+              <li>Não sou possessivo, mas gosto de carinho</li>
+              <li>Não ronco (acho)</li>
+              <li>Você vai rir comigo até em momentos bobos</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>NENHUM</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </section>
 
   </main>
   
