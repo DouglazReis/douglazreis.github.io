@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: url('bg.png') no-repeat center center fixed;
-  background-size: cover;
+  background: url('bg.png') repeat;
+  background-size: auto;
   color: #fff;
   overflow-x: hidden;
 }
