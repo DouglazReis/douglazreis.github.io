@@ -1,13 +1,18 @@
-/* Definições Globais e Variáveis de Cor */
+/* Definições Globais e Variáveis de Cor - TEMA LOVECRAFTIANO */
 :root {
-    --cor-fundo-escuro: #0a0a0a;
-    --cor-fundo-secao: #121212;
-    --cor-texto-principal: #e0e0e0;
-    --cor-vermelho-sangue: #990000;
-    --cor-vermelho-hover: #7a0000;
-    --fonte-titulo: 'Creepster', cursive;
-    --fonte-corpo: 'Roboto', sans-serif;
+    --cor-fundo-abismo: #0d1117; /* Um preto com um toque de azul profundo */
+    --cor-fundo-secao: #161b22;  /* Um cinza-escuro, cor de pedra molhada */
+    --cor-texto-principal: #c9d1d9; /* Um branco-osso, cor de pergaminho */
+    --cor-verde-loucura: #238636; /* Um verde-musgo, doentio e inquietante */
+    --cor-verde-hover: #2ea043;   /* Um verde mais claro para interação */
+    
+    /* Fontes do Google - Uncial Antiqua para títulos, Source Serif Pro para corpo */
+    --fonte-titulo: 'Uncial Antiqua', cursive;
+    --fonte-corpo: 'Source Serif Pro', serif;
 }
+
+/* Importa as fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&family=Uncial+Antiqua&display=swap');
 
 /* Reset Básico */
 * {
@@ -17,10 +22,10 @@
 }
 
 body {
-    background-color: var(--cor-fundo-escuro);
+    background-color: var(--cor-fundo-abismo);
     color: var(--cor-texto-principal);
     font-family: var(--fonte-corpo);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .container {
@@ -37,12 +42,14 @@ section, header {
 
 h1, h2, h3 {
     font-family: var(--fonte-titulo);
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    font-weight: 400; /* Esta fonte não tem bold, então normalizamos */
 }
 
 /* SEÇÃO 1: HERO */
 .hero-section {
-    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 1)), url('images/fundo-textura.jpg') no-repeat center center/cover;
+    /* Sugestão de textura: ancient parchment, cthulhu stone, dark water texture seamless */
+    background: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 1)), url('images/fundo-textura.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -61,12 +68,12 @@ h1, h2, h3 {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    color: var(--cor-vermelho-sangue);
+    font-size: 3.2rem;
+    color: var(--cor-verde-loucura);
 }
 
 .hero-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 20px;
 }
 
@@ -76,28 +83,32 @@ h1, h2, h3 {
 
 .hero-image img {
     width: 100%;
-    filter: drop-shadow(0 0 15px rgba(0,0,0,0.8));
-    transform: rotate(-5deg);
+    filter: drop-shadow(0 0 15px rgba(0,0,0,0.5)) sepia(0.2) saturate(0.8);
+    transform: rotate(-3deg);
+    border: 1px solid rgba(35, 134, 54, 0.2);
 }
 
 /* Botão de Ação (CTA) */
 .cta-button {
     display: inline-block;
-    background-color: var(--cor-vermelho-sangue);
+    background-color: var(--cor-verde-loucura);
     color: #fff;
     padding: 15px 35px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: var(--fonte-titulo);
     text-decoration: none;
+    border: 1px solid var(--cor-verde-hover);
     border-radius: 5px;
     margin-top: 20px;
     transition: background-color 0.3s, transform 0.3s;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .cta-button:hover {
-    background-color: var(--cor-vermelho-hover);
+    background-color: var(--cor-verde-hover);
     transform: scale(1.05);
+    box-shadow: 0 0 10px var(--cor-verde-loucura);
 }
 
 /* Demais Seções */
@@ -106,9 +117,9 @@ h1, h2, h3 {
 }
 
 .pain-section h3, .testimonials-section h3, .final-offer-section h3 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    color: var(--cor-vermelho-sangue);
+    color: var(--cor-verde-loucura);
 }
 
 .pain-section p {
@@ -128,7 +139,7 @@ h1, h2, h3 {
 .testimonial-card {
     background-color: var(--cor-fundo-secao);
     padding: 30px;
-    border-left: 5px solid var(--cor-vermelho-sangue);
+    border-left: 5px solid var(--cor-verde-loucura);
     text-align: left;
 }
 
@@ -139,7 +150,8 @@ h1, h2, h3 {
 
 .testimonial-card span {
     font-weight: bold;
-    color: var(--cor-vermelho-sangue);
+    color: var(--cor-verde-loucura);
+    font-family: var(--fonte-titulo);
 }
 
 /* Oferta Final */
@@ -171,7 +183,7 @@ h1, h2, h3 {
 .price {
     font-size: 4rem;
     font-weight: bold;
-    color: var(--cor-vermelho-sangue);
+    color: var(--cor-verde-loucura);
     font-family: var(--fonte-corpo);
 }
 
