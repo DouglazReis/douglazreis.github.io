@@ -1,0 +1,216 @@
+/* Definições Globais e Variáveis de Cor */
+:root {
+    --cor-fundo-escuro: #0a0a0a;
+    --cor-fundo-secao: #121212;
+    --cor-texto-principal: #e0e0e0;
+    --cor-vermelho-sangue: #990000;
+    --cor-vermelho-hover: #7a0000;
+    --fonte-titulo: 'Creepster', cursive;
+    --fonte-corpo: 'Roboto', sans-serif;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-corpo);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos das Seções */
+section, header {
+    padding: 80px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    letter-spacing: 2px;
+}
+
+/* SEÇÃO 1: HERO */
+.hero-section {
+    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 1)), url('images/fundo-textura.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 60%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--cor-vermelho-sangue);
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    max-width: 35%;
+}
+
+.hero-image img {
+    width: 100%;
+    filter: drop-shadow(0 0 15px rgba(0,0,0,0.8));
+    transform: rotate(-5deg);
+}
+
+/* Botão de Ação (CTA) */
+.cta-button {
+    display: inline-block;
+    background-color: var(--cor-vermelho-sangue);
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: var(--cor-vermelho-hover);
+    transform: scale(1.05);
+}
+
+/* Demais Seções */
+.pain-section {
+    background-color: var(--cor-fundo-secao);
+}
+
+.pain-section h3, .testimonials-section h3, .final-offer-section h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--cor-vermelho-sangue);
+}
+
+.pain-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Depoimentos */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: var(--cor-fundo-secao);
+    padding: 30px;
+    border-left: 5px solid var(--cor-vermelho-sangue);
+    text-align: left;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial-card span {
+    font-weight: bold;
+    color: var(--cor-vermelho-sangue);
+}
+
+/* Oferta Final */
+.final-offer-section {
+    background-color: var(--cor-fundo-secao);
+}
+
+.final-offer-image {
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+.final-offer-section ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.final-offer-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.price-label {
+    margin-top: 40px;
+}
+
+.price {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--cor-vermelho-sangue);
+    font-family: var(--fonte-corpo);
+}
+
+.final-cta {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+}
+
+.guarantee {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .hero-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 60%;
+        margin-top: 40px;
+    }
+
+    h1 { font-size: 2.8rem !important; }
+    h2 { font-size: 2rem !important; }
+    h3 { font-size: 2.5rem !important; }
+}
